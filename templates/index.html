@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Predictor</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" type="text/css" href="home.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="background-color: rgb(95, 97, 102);">
+    <div class="row">
+      <div
+        class="col-md-12"
+        id="heading"
+        style="
+          text-align: center;
+          margin-top: 75px;
+          font-size: 200px;
+          font-weight: 800;
+        "
+      >
+        <h1
+          style="
+            font-family: 'Patua One', cursive;
+            color: white;
+            font-size: 80px;
+          "
+        >
+          Stock Predictor
+        </h1>
+      </div>
+    </div>
+    <div class="row" style="width: 30%; margin: auto; margin-top: 50px;">
+      <div class="col-md-12">
+        <!-- Beginning of form -->
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="dateinput" style="color: white;">Prediction Date</label>
+            <input
+              type="text"
+              class="form-control"
+              id="dateinput"
+              name="dateinput"
+              placeholder="Enter Date in form mm/dd/yyyy"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="
+              margin-left: 150px;
+              background-color: rgb(242, 121, 34);
+              border: none;
+            "
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="output" style="text-align: center;"></div>
+  </body>
+</html>
